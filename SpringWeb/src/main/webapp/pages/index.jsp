@@ -8,5 +8,7 @@
 </head>
 <body>
 <h1>hello ${name}</h1>
+
+<h2> Alien information ==> name : ${alien.aName}  language:  ${alien.lang} </h2>
 </body>
 </html>

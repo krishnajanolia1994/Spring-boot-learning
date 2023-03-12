@@ -9,6 +9,8 @@ import org.springframework.web.bind.annotation.GetMapping;
 import org.springframework.web.bind.annotation.RequestParam;
 import org.springframework.web.servlet.ModelAndView;
 
+import com.spring.web.demo.SpringWeb.model.Alien;
+
 @Controller
 public class Home {
 	
@@ -36,13 +38,13 @@ public class Home {
 		return modelAndView;
 	}
 	
-	@GetMapping("home")
-	public ModelAndView alien(){
+	@GetMapping("alien")
+	public ModelAndView alien(Alien alien){
 		
 		ModelAndView modelAndView = new ModelAndView();
 		
 		modelAndView.setViewName("index");
-		modelAndView.addObject("obj", "");
+		modelAndView.addObject("alien", alien);
 		return modelAndView;
 	}
 }
