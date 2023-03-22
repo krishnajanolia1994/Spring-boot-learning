@@ -9,7 +9,7 @@
 <body>
 	<form action="addAlien">
 		<input type="text" name="id"><br>
-		<input type="text" name="id"><br>
+		<input type="text" name="name"><br>
 		<input type="submit"> <br>
 		
 	</form>
