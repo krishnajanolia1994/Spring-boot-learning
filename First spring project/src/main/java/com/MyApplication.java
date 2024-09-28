@@ -1,8 +1,12 @@
 package com;
 
 
+import java.util.ArrayDeque;
+import java.util.ArrayList;
 import java.util.Arrays;
+import java.util.Collections;
 import java.util.List;
+import java.util.Queue;
 import java.util.Set;
 import java.util.SortedSet;
 import java.util.TreeSet;
@@ -34,6 +38,23 @@ public class MyApplication {
 
     public static void main(String[] args) {
     	
+//    	List<Object> list1 = new ArrayList<Object>();
+//    	
+//    	Demo demo = new Demo();
+//    	
+//    	demo.setStr("kri");
+//    	
+//    	Demo2 demo2 = new Demo2();
+//    	
+//    	demo2.setStr("kri");
+//    	
+//    	list1.add(demo);
+//    	
+//    	
+//    	ArrayDeque<Integer> dq = new ArrayDeque<Integer>();
+//    	
+    	
+    	
 //    	for(int i=0;i<10;i++) {
 //    		System.out.print(i+" ");
 //    		if(i%2 == 0)
@@ -44,12 +65,21 @@ public class MyApplication {
        
     	List<Integer> list = Arrays.asList(1,2,3,4,5,5,5,3,4,2,3,4,3,2,4,6,3,1,2);
     	
-    	Set<Integer> set  = list.stream().filter(i-> i%2==0).map(i-> i*i).collect(Collectors.toSet());
+    	Collections.sort(list);
+    	List list1 = new ArrayList();
+//    	Collections.checkedCollection(list, Integer.class);
     	
-    	set.forEach(i-> System.out.print(i+" "));
     	
-    	System.out.print(list.stream().anyMatch(i-> i==2));
-    	list.stream().anyMatch(i-> i==2);
+    	System.out.println(Collections.binarySearch(list, 1));
+    	
+    	list.add(1);
+    	
+//    	Set<Integer> set  = list.stream().filter(i-> i%2==0).map(i-> i*i).collect(Collectors.toSet());
+//    	
+//    	set.forEach(i-> System.out.print(i+" "));
+//    	
+//    	System.out.print(list.stream().anyMatch(i-> i==2));
+//    	list.stream().anyMatch(i-> i==2);
     	
     	
     	

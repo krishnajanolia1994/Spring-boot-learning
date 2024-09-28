@@ -1,6 +1,11 @@
 package com.spring.jpa.data.springdatajpa.service;
 
+import java.math.BigDecimal;
 import java.util.List;
+import java.util.Map;
+
+import org.springframework.data.domain.Page;
+import org.springframework.data.domain.Pageable;
 
 import com.spring.jpa.data.springdatajpa.entity.Product;
 
@@ -23,6 +28,13 @@ public interface ProductService {
 	public void deleteByProducts(List<Product> products);
 
 	public boolean isProductExist(Long id);
+
+	public List<Product> findByPriceBetween(BigDecimal price1, BigDecimal price2);
+
+	public List<Product> getAll(String price, String name,String dir);
+
+	public Page<Product> getAll(boolean advanceSearch, List<String> facilityId, String search, Map<String, Object> context,
+			Pageable pageable);
 
 
 }

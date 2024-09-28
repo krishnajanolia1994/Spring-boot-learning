@@ -1,16 +1,18 @@
 package com;
 
-public class Demo2<T> {
+public class Demo2 {
 	
-	private T obj;
+	
+	private String str;
 
-	public T getObj() {
-		return obj;
+	public String getStr() {
+		return str;
 	}
 
-	public void setObj(T obj) {
-		this.obj = obj;
+	public void setStr(String str) {
+		this.str = str;
 	}
+
 	
 	
 	

@@ -27,6 +27,8 @@ import com.example.jpa.demo.jpaDemo.model.Person;
 import com.example.jpa.demo.jpaDemo.model.exception.ProductNotFoundException;
 import com.example.jpa.demo.jpaDemo.repo.PersonRepo;
 import com.example.jpa.demo.jpaDemo.service.ProductService;
+import javax.persistence.criteria.Predicate;
+
 
 @Controller
 public class HomeCcontroller {
